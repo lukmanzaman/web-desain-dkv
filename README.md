@@ -7,7 +7,7 @@
 [![Format](https://img.shields.io/badge/Format-PPT%20%7C%20PDF%20%7C%20Code-brightgreen.svg?style=flat-square)](#-struktur-direktori)
 [![Materi](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20JS%20%7C%20Bootstrap%20%7C%20Tailwind-blueviolet.svg?style=flat-square)](#-daftar-isi--pemetaan-materi-71-bab)
 
-Selamat datang di repositori resmi materi presentasi (*slide decks*), dokumen bacaan (*PDF*), dan berkas kode pendukung (*companion code*) untuk buku **"Desain Web bagi Noncoder"** yang disusun oleh **Lukman Zaman** dari **Institut Sains dan Teknologi Terpadu Surabaya (Institut STTS)**.
+Selamat datang di repositori resmi materi presentasi (*slide decks*), dokumen bacaan (*PDF*), dan berkas kode pendukung (*companion code*) untuk buku **"Desain Web bagi Noncoder"**.
 
 ---
 
