@@ -28,12 +28,11 @@ if (-not (Test-Path ".git")) {
 } else {
     Write-Host "[1/4] Repositori Git lokal sudah terhubung." -ForegroundColor Green
     git branch -M main 2>$null
-    $remotes = git remote -v
-    if ($remotes -notmatch "lukmanzaman/web-desain-dkv") {
-        git remote set-url origin $RepoUrl 2>$null
-        if ($LASTEXITCODE -ne 0) {
-            git remote add origin $RepoUrl 2>$null
-        }
+    $remotes = git remote
+    if ($remotes -notcontains "origin") {
+        git remote add origin $RepoUrl
+    } else {
+        git remote set-url origin $RepoUrl
     }
 }
 
