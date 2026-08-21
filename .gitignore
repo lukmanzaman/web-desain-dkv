@@ -1,0 +1,23 @@
+# Windows system files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# MS Office / PowerPoint temporary lock files
+~$*.pptx
+~$*.ppt
+~$*.docx
+~$*.xlsx
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor & Temporary files
+*.tmp
+*.temp
+*.log
+.vscode/
+.idea/
