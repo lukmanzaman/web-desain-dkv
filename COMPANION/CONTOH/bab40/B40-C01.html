@@ -1,0 +1,54 @@
+<!-- B40-C01: Sakelar Mode Gelap (Dark Mode Toggle) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B40-C01: JavaScript Secukupnya — Sakelar Tema</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #18181b;
+      font-family: system-ui, sans-serif;
+      padding: 3rem 1.5rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    body.mode-gelap {
+      background-color: #09090b;
+      color: #fafafa;
+    }
+    .theme-btn {
+      padding: 0.6rem 1.2rem;
+      background-color: #27272a;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    body.mode-gelap .theme-btn {
+      background-color: #f4f4f5;
+      color: #18181b;
+    }
+  </style>
+</head>
+<body>
+  <button id="theme-switch" class="theme-btn">Ganti Mode Tampilan</button>
+  <h1>Pustaka Desain Interaktif</h1>
+  <p>JavaScript cukup digunakan sebagai jembatan yang menghubungkan aksi pengguna (klik) dengan manipulasi kelas CSS di DOM.</p>
+
+  <script>
+    // 1. Pilih elemen tombol sakelar dari HTML
+    const tombolTema = document.querySelector("#theme-switch");
+
+    // 2. Pasang pendengar peristiwa (Event Listener) untuk klik
+    tombolTema.addEventListener("click", () => {
+      // 3. Tambah atau cabut kelas 'mode-gelap' pada elemen <body>
+      document.body.classList.toggle("mode-gelap");
+    });
+  </script>
+</body>
+</html>

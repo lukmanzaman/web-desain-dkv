@@ -1,0 +1,32 @@
+<!-- B41-L01.html: Latihan Event Handler & Accessibility Toggle -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B41-L01: Interaksi Menu Aksesibel</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; }
+    .panel { display: none; padding: 1.5rem; background: #f1f5f9; border-radius: 8px; margin-top: 1rem; }
+    .panel.buka { display: block; }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan B41-L01: Menangani Event Keyboard & Klik</h1>
+  <button id="btn-panel" aria-expanded="false">Buka Panel Informasi</button>
+  <div id="panel-info" class="panel">
+    <h3>Informasi Pameran</h3>
+    <p>Pameran terbuka untuk umum setiap hari kerja.</p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn-panel');
+    const panel = document.getElementById('panel-info');
+    btn.addEventListener('click', () => {
+      const buka = panel.classList.toggle('buka');
+      btn.setAttribute('aria-expanded', buka);
+      btn.textContent = buka ? 'Tutup Panel Informasi' : 'Buka Panel Informasi';
+    });
+  </script>
+</body>
+</html>

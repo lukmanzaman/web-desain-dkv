@@ -1,0 +1,9 @@
+/* 02-tokens.css */
+:root {
+  --color-brand: #4f46e5;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+  --radius-card: 12px;
+}

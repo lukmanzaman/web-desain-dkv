@@ -1,0 +1,56 @@
+/* style.css: Selektor Kompleks & Pseudo-Class */
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #1f2937;
+}
+
+/* 1. Selektor Gabungan / Kompound */
+.kartu-produk.unggulan {
+  border: 2px solid #3b82f6;
+  background-color: #eff6ff;
+}
+
+.kartu-produk {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* 2. Selektor Keturunan Langsung (Child Combinator) */
+.katalog > .kartu-produk .judul {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+/* 3. Pseudo-Class Tabel Zebra */
+.tabel-layanan {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabel-layanan th, 
+.tabel-layanan td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.tabel-layanan th {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+/* Zebra striping dengan :nth-child(even) */
+.tabel-layanan tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.tabel-layanan tbody tr:hover {
+  background-color: #f1f5f9;
+}

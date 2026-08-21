@@ -1,0 +1,28 @@
+<!-- B53-L01.html: Latihan Kustomisasi Tailwind Config -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B53-L01: Sistem Desain Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'kurasi-brand': '#b45309',
+            'kurasi-bg': '#fef3c7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-kurasi-bg p-8 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-2xl shadow-lg border border-amber-200 max-w-md text-center">
+    <h2 class="text-2xl font-black text-kurasi-brand mb-2">Ruang Rupa Kurasi</h2>
+    <p class="text-stone-700">Warna kustom terintegrasi mulus melalui konfigurasi Tailwind runtime.</p>
+  </div>
+</body>
+</html>

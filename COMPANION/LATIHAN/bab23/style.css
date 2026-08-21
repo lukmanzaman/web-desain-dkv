@@ -1,0 +1,59 @@
+/* style.css: Box Model & Universal Reset */
+
+/* 1. Aturan Wajib Setiap Proyek Web: Universal Box-Sizing Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 2. Komponen Kartu Profil Terukur */
+.kartu-profil {
+  width: 320px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;             /* Ruang di dalam kotak (Padding) */
+  border: 1px solid #e5e7eb;   /* Garis bingkai (Border) */
+  margin: 1.5rem 0;           /* Ruang di luar kotak (Margin) */
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.foto {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.nama {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.keahlian {
+  margin: 0 0 1.25rem 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.btn-kontak {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}

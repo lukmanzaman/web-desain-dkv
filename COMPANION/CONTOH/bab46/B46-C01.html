@@ -1,0 +1,39 @@
+<!-- B46-C01: Sistem Komponen Tombol & Varian Gaya -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B46-C01: Komponen & Varian</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; display: flex; gap: 1rem; align-items: center; }
+    /* 1. Base Button Class */
+    .c-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.65rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    /* 2. Varian Gaya */
+    .c-btn--primary { background: #4f46e5; color: #ffffff; }
+    .c-btn--primary:hover { background: #4338ca; }
+    
+    .c-btn--outline { background: transparent; border-color: #4f46e5; color: #4f46e5; }
+    .c-btn--outline:hover { background: #eef2ff; }
+
+    .c-btn--sm { padding: 0.4rem 0.8rem; font-size: 0.85rem; }
+    .c-btn--lg { padding: 0.85rem 1.75rem; font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+  <button class="c-btn c-btn--primary c-btn--lg">Tombol Primer Besar</button>
+  <button class="c-btn c-btn--outline">Tombol Garis Tepi</button>
+  <button class="c-btn c-btn--primary c-btn--sm">Tombol Kecil</button>
+</body>
+</html>

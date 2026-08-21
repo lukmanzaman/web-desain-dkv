@@ -1,0 +1,22 @@
+<!-- B35-L01-galeri-foto.html: Latihan Art Direction dengan Tag <picture> -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B35-L01: Art Direction Picture Tag</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; text-align: center; }
+    picture img { max-width: 100%; height: auto; border-radius: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Art Direction Responsif</h1>
+  <picture>
+    <!-- Layar Lebar: Menampilkan gambar lanskap -->
+    <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=900">
+    <!-- Layar Ponsel: Menampilkan gambar potongan persegi -->
+    <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=400" alt="Karya Seni">
+  </picture>
+</body>
+</html>

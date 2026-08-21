@@ -1,0 +1,79 @@
+<!-- B30-L01-kartu-harga.html: Merakit Pola Kartu Harga dengan Flexbox Column -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B30-L01: Kartu Harga Flexbox</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 3rem 1rem;
+    }
+    .pricing-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .pricing-card {
+      flex: 1 1 300px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .pricing-card.featured {
+      border-color: #6366f1;
+      background: #1e1b4b;
+    }
+    .tier-name { font-size: 1.25rem; margin: 0; }
+    .price { font-size: 2.25rem; font-weight: 800; margin: 1rem 0; color: #818cf8; }
+    .features { list-style: none; padding: 0; margin: 0; flex-grow: 1; }
+    .features li { padding: 0.5rem 0; border-bottom: 1px solid #334155; color: #94a3b8; }
+    .btn-select {
+      margin-top: 2rem;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: none;
+      background: #6366f1;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h3 class="tier-name">Dasar</h3>
+      <div class="price">Rp450rb</div>
+      <ul class="features">
+        <li>1 Konsep Identitas Logo</li>
+        <li>Format File Vektor SVG & PNG</li>
+        <li>2 Kali Revisi</li>
+      </ul>
+      <button class="btn-select">Pilih Dasar</button>
+    </div>
+
+    <div class="pricing-card featured">
+      <h3 class="tier-name">Profesional</h3>
+      <div class="price">Rp1.8jt</div>
+      <ul class="features">
+        <li>3 Konsep Identitas Komprehensif</li>
+        <li>Buku Panduan Brand Manual 30 Hal</li>
+        <li>Sistem Warna & Tipografi Web</li>
+        <li>Revisi Tak Terbatas</li>
+      </ul>
+      <button class="btn-select">Pilih Profesional</button>
+    </div>
+  </div>
+</body>
+</html>

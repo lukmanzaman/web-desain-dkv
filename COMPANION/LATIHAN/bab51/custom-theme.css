@@ -1,0 +1,16 @@
+/* custom-theme.css: Override Variabel Bootstrap untuk Estetika DKV */
+:root {
+  --bs-primary: #1e1b4b; /* Indigo Deep Navy */
+  --bs-primary-rgb: 30, 27, 75;
+}
+
+.btn-accent {
+  background-color: #f59e0b;
+  color: #000;
+  font-weight: 700;
+  border-radius: 50px;
+}
+.btn-accent:hover {
+  background-color: #d97706;
+  color: #000;
+}

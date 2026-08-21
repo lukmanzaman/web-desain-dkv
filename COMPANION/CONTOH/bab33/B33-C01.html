@@ -1,0 +1,74 @@
+<!-- B33-C01: Kartu Produk dengan Badge & FAB WhatsApp -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B33-C01: Positioning & Lapisan z-index</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f1f5f9;
+      padding: 3rem 1rem;
+      min-height: 150vh; /* Agar bisa digulir untuk menguji fixed */
+    }
+    /* 1. Relative Container sebagai Jangkar */
+    .product-card {
+      position: relative;
+      width: 300px;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      margin: 0 auto;
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    /* 2. Absolute Badge Mengambang di Atas Gambar */
+    .badge-promo {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background-color: #ef4444;
+      color: #ffffff;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      z-index: 10;
+    }
+    .card-body { padding: 1.25rem; }
+    /* 3. Fixed WhatsApp Floating Action Button */
+    .fab-wa {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #22c55e;
+      color: #ffffff;
+      padding: 0.85rem 1.25rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <article class="product-card">
+    <span class="badge-promo">Diskon 30%</span>
+    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Jam Desain">
+    <div class="card-body">
+      <h3>Jam Meja Minimalis</h3>
+      <p>Desain kayu jati solid dengan grafir tipografi angka modern.</p>
+    </div>
+  </article>
+
+  <a href="https://wa.me/" class="fab-wa">💬 Tanya Kurator</a>
+</body>
+</html>

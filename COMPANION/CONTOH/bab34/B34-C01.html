@@ -1,0 +1,49 @@
+<!-- B34-C01: Tata Letak Halaman Berita Responsif Mobile-First -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B34-C01: Berpikir Responsif Mobile-First</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      color: #1e293b;
+      background: #f8fafc;
+    }
+    /* 1. Mobile Default (Aliran 1 Kolom Ringan) */
+    .wadah-berita {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .berita-utama { background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e2e8f0; }
+    .berita-samping { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; }
+
+    /* 2. Tablet & Desktop Breakpoint: min-width 768px */
+    @media (min-width: 768px) {
+      .wadah-berita {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* 2 Kolom Utama + Samping */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wadah-berita">
+    <article class="berita-utama">
+      <h1>Eksplorasi Aksara Nusantara dalam Ranah Web Modern</h1>
+      <p>Bagaimana desainer muda merevitalisasi manuskrip kuno menjadi aset tipografi digital yang adaptif.</p>
+    </article>
+    <aside class="berita-samping">
+      <h3>Agenda Pameran</h3>
+      <p>28 Maret 2026 &mdash; Galeri Seni Rupa Surabaya.</p>
+    </aside>
+  </div>
+</body>
+</html>

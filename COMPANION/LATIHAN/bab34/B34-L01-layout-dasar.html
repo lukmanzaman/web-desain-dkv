@@ -1,0 +1,35 @@
+<!-- B34-L01-layout-dasar.html: Latihan Media Queries & Breakpoints -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B34-L01: Layout Dasar Responsif</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; padding: 1.5rem; background: #fafaf9; }
+    .grid-responsif {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    @media (min-width: 600px) {
+      .grid-responsif { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 900px) {
+      .grid-responsif { grid-template-columns: repeat(3, 1fr); }
+    }
+    .kartu { background: #fff; padding: 1.25rem; border: 1px solid #e7e5e4; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan B34-L01: Menguji Breakpoints</h1>
+  <div class="grid-responsif">
+    <div class="kartu"><h3>Kolom 1</h3><p>Ubah ukuran jendela peramban untuk melihat adaptasi kolom.</p></div>
+    <div class="kartu"><h3>Kolom 2</h3><p>Dari 1 kolom di ponsel, 2 di tablet, hingga 3 di desktop.</p></div>
+    <div class="kartu"><h3>Kolom 3</h3><p>Mobile-first menjamin keringanan beban perangkat genggam.</p></div>
+  </div>
+</body>
+</html>

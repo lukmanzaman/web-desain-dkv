@@ -1,0 +1,14 @@
+/* style.css: Gaya Landing Vercel */
+body {
+  font-family: system-ui, sans-serif;
+  background: #000;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+.hero { max-width: 600px; padding: 2rem; }
+h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+p { color: #888; }

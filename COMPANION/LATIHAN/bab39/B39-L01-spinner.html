@@ -1,0 +1,28 @@
+<!-- B39-L01-spinner.html: Latihan Loading Spinner Keyframes -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B39-L01: Loading Spinner Keyframes</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 3rem; background: #f8fafc; text-align: center; }
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid #e2e8f0;
+      border-top-color: #3b82f6;
+      border-radius: 50%;
+      margin: 2rem auto;
+      animation: putar 0.8s linear infinite;
+    }
+    @keyframes putar {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Memuat Data Kurasi...</h1>
+  <div class="spinner"></div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!-- B30-C01: Grid Kartu Fleksibel Tinggi Seimbang (Equal Height Cards) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B30-C01: Flexbox Kartu Seimbang</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f8fafc;
+      padding: 3rem 1.5rem;
+      color: #1e293b;
+    }
+    .wadah-kartu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .kartu-flex {
+      flex: 1 1 280px; /* Fleksibel memanjang dan menyusut */
+      display: flex;
+      flex-direction: column; /* Sumbu vertikal */
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .kartu-konten {
+      flex-grow: 1; /* Mendorong tombol CTA selalu rata di dasar kartu */
+    }
+    .kartu-konten h3 { margin-top: 0; }
+    .kartu-konten p { color: #64748b; line-height: 1.5; }
+    .btn-cta {
+      margin-top: 1.5rem;
+      padding: 0.65rem 1rem;
+      background-color: #2563eb;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="wadah-kartu">
+    <div class="kartu-flex">
+      <div class="kartu-konten">
+        <h3>Paket Zine Mini</h3>
+        <p>Cocok untuk publikasi karya mahasiswa semester awal.</p>
+      </div>
+      <a href="#" class="btn-cta">Pilih Paket</a>
+    </div>
+
+    <div class="kartu-flex">
+      <div class="kartu-konten">
+        <h3>Paket Buku Editorial Lengkap</h3>
+        <p>Tata letak majalah dan buku seni 200 halaman lengkap dengan manajemen warna separasi cetak dan konsultasi kertas.</p>
+      </div>
+      <a href="#" class="btn-cta">Pilih Paket</a>
+    </div>
+  </div>
+</body>
+</html>

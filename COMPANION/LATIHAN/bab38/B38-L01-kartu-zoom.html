@@ -1,0 +1,33 @@
+<!-- B38-L01-kartu-zoom.html: Latihan Transform Scale & Ruang Spasial -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B38-L01: Transform Hover Zoom</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 3rem; background: #fafaf9; }
+    .frame {
+      width: 280px;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .frame:hover img {
+      transform: scale(1.15) rotate(1deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=400" alt="Seni">
+  </div>
+</body>
+</html>

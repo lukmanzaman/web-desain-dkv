@@ -1,0 +1,53 @@
+/* style.css: Skala Modular (Rasio Major Third 1.25) & Ritme Vertikal */
+
+body {
+  font-family: Georgia, serif;
+  background-color: #fdfbf7;
+  color: #262626;
+  padding: 3rem 1.5rem;
+}
+
+/* Measure: Batasi panjang baris 65 karakter */
+.wadah-baca {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+/* Skala Ukuran Huruf Modular */
+h1 {
+  font-size: 2.441rem; /* ~39px */
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: system-ui, sans-serif;
+  color: #171717;
+}
+
+h2 {
+  font-size: 1.953rem; /* ~31px */
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-family: system-ui, sans-serif;
+}
+
+h3 {
+  font-size: 1.563rem; /* ~25px */
+  line-height: 1.3;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: system-ui, sans-serif;
+}
+
+p {
+  font-size: 1rem;      /* 16px */
+  line-height: 1.65;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.meta {
+  font-size: 0.8rem;   /* ~12.8px */
+  color: #737373;
+  font-family: system-ui, sans-serif;
+}

@@ -1,0 +1,13 @@
+/* tokens.css: Kamus Token Desain Lengkap */
+:root {
+  --color-primary-500: #0ea5e9;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text-main: #0f172a;
+  --font-primary: system-ui, -apple-system, sans-serif;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --radius-md: 8px;
+}

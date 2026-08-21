@@ -1,0 +1,54 @@
+<!-- B41-C01: Tombol Sakelar Menu Seluler (Drawer Navigation) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B41-C01: Sakelar Menu Seluler</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 1.5rem; }
+    .nav-toggle {
+      font-size: 1.5rem;
+      background: none;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 0.25rem 0.6rem;
+      cursor: pointer;
+    }
+    .mobile-drawer {
+      display: none;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 0.75rem;
+    }
+    .mobile-drawer.is-open {
+      display: block;
+    }
+    .mobile-drawer ul { list-style: none; padding: 0; margin: 0; }
+    .mobile-drawer li { padding: 0.5rem 0; border-bottom: 1px solid #e2e8f0; }
+  </style>
+</head>
+<body>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Buka Menu">☰</button>
+  <nav class="mobile-drawer">
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Koleksi Karya</a></li>
+      <li><a href="#">Profil Studio</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const drawer = document.querySelector('.mobile-drawer');
+
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = drawer.classList.toggle('is-open');
+      toggleBtn.setAttribute('aria-expanded', isOpen);
+      toggleBtn.textContent = isOpen ? '✕' : '☰';
+    });
+  </script>
+</body>
+</html>

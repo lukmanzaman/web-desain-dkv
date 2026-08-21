@@ -1,0 +1,36 @@
+<!-- B46-L01.html: Latihan Varian Komponen Kartu Horizontal -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B46-L01: Varian Kartu Horizontal</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; background: #f8fafc; }
+    .c-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; max-width: 320px; }
+    .c-card__img { width: 100%; height: 160px; object-fit: cover; }
+    .c-card__body { padding: 1rem; }
+    
+    /* Varian Horizontal Modifier */
+    .c-card--horizontal {
+      display: flex;
+      max-width: 560px;
+    }
+    .c-card--horizontal .c-card__img {
+      width: 180px;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan B46-L01: Menambahkan Varian Kartu</h1>
+  
+  <article class="c-card c-card--horizontal">
+    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300" alt="Buku" class="c-card__img">
+    <div class="c-card__body">
+      <h3>Katalog Buku Tipografi</h3>
+      <p>Varian kartu horizontal sangat ideal untuk tata letak daftar artikel dan feed berita.</p>
+    </div>
+  </article>
+</body>
+</html>

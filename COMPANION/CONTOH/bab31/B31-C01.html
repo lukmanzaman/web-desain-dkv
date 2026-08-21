@@ -1,0 +1,59 @@
+<!-- B31-C01: Galeri Portofolio Asimetris CSS Grid -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B31-C01: Galeri Portofolio Asimetris CSS Grid</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #fafaf9;
+      padding: 3rem 1.5rem;
+      color: #1c1917;
+    }
+    .grid-galeri {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 180px;
+      gap: 1.25rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .item-galeri {
+      background: #e7e5e4;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+    .item-galeri img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Karya Unggulan Membentang 2 Kolom dan 2 Baris */
+    .item-sorotan {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Koleksi Portofolio Grid Asimetris</h1>
+  <div class="grid-galeri">
+    <div class="item-galeri item-sorotan">
+      <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600" alt="Karya Utama">
+    </div>
+    <div class="item-galeri">
+      <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=400" alt="Karya 2">
+    </div>
+    <div class="item-galeri">
+      <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=400" alt="Karya 3">
+    </div>
+    <div class="item-galeri">
+      <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=400" alt="Karya 4">
+    </div>
+  </div>
+</body>
+</html>

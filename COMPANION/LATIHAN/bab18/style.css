@@ -1,0 +1,24 @@
+/* style.css: Uji Coba Kaskade & Spesifisitas Bab 18 */
+
+/* 1. Selektor Tipe Elemen (Spesifisitas Rendah: 0,0,1) */
+h1 {
+  color: #4b5563; /* Abu-abu */
+  font-family: serif;
+}
+
+/* 2. Selektor Kelas (Spesifisitas Sedang: 0,1,0) */
+.tajuk-utama {
+  color: #2563eb; /* Biru */
+}
+
+/* 3. Selektor ID (Spesifisitas Tinggi: 1,0,0) */
+#judul-spesifik {
+  color: #1e1b4b; /* Biru Gelap - Aturan ini yang menang */
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+  color: #374151;
+}

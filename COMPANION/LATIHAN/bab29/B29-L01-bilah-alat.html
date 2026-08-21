@@ -1,0 +1,68 @@
+<!-- B29-L01-bilah-alat.html: Menguasai Sumbu Flexbox & Toolbar -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B29-L01: Bilah Alat Fleksibel (Toolbar UI)</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 2rem;
+      background-color: #f1f5f9;
+    }
+    /* Toolbar Kontainer Fleksibel */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      max-width: 720px;
+    }
+    .tool-group {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .btn-tool {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .btn-tool:hover {
+      background: #e2e8f0;
+    }
+    .btn-action {
+      background: #3b82f6;
+      color: #ffffff;
+      border: none;
+      padding: 0.45rem 1rem;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan B29-L01: Menguasai Sumbu Flexbox</h1>
+  
+  <div class="toolbar">
+    <div class="tool-group">
+      <button class="btn-tool"><b>B</b></button>
+      <button class="btn-tool"><i>I</i></button>
+      <button class="btn-tool"><u>U</u></button>
+    </div>
+    <div class="tool-group">
+      <span>Ukuran: 16px</span>
+      <button class="btn-action">Simpan Draf</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* style.css: Token Desain & Tata Letak Landing Page Bab 64 */
+:root {
+  --warna-utama: #4f46e5;
+  --warna-utama-hover: #4338ca;
+  --warna-latar: #f8fafc;
+  --warna-kartu: #ffffff;
+  --warna-teks-judul: #0f172a;
+  --warna-teks-bodi: #475569;
+  --font-utama: system-ui, -apple-system, sans-serif;
+  --radius-md: 12px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-utama);
+  background-color: var(--warna-latar);
+  color: var(--warna-teks-bodi);
+  line-height: 1.6;
+}
+
+.kontainer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.hero-section {
+  padding: 5rem 0 4rem 0;
+  text-align: center;
+}
+
+.badge-rilis {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: #e0e7ff;
+  color: var(--warna-utama);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-judul {
+  font-size: clamp(2rem, 1rem + 3.5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--warna-teks-judul);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.hero-subjudul {
+  font-size: 1.15rem;
+  max-width: 680px;
+  margin: 0 auto 2rem auto;
+}
+
+.hero-cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primer {
+  background-color: var(--warna-utama);
+  color: #ffffff;
+}
+.btn-primer:hover { background-color: var(--warna-utama-hover); }
+
+.btn-sekunder {
+  background-color: #ffffff;
+  color: var(--warna-teks-judul);
+  border: 1px solid #cbd5e1;
+}
+
+.fitur-section { padding: 4rem 1.5rem; }
+.section-title { text-align: center; font-size: 2rem; color: var(--warna-teks-judul); margin-bottom: 2.5rem; }
+
+.fitur-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.kartu-fitur {
+  background-color: var(--warna-kartu);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.kartu-fitur h3 { color: var(--warna-teks-judul); margin-bottom: 0.75rem; }
+
+.site-footer { text-align: center; padding: 3rem 0; border-top: 1px solid #e2e8f0; }

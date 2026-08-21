@@ -1,0 +1,37 @@
+<!-- B43-L01.html: Latihan prefers-reduced-motion -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B43-L01: Aksesibilitas Gerak</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; }
+    .animated-card {
+      padding: 2rem;
+      background: #f1f5f9;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .animated-card:hover {
+      transform: scale(1.05);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .animated-card {
+        transition: none;
+      }
+      .animated-card:hover {
+        transform: none;
+        outline: 2px solid #3b82f6; /* Ganti zoom dengan highlight kontras */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan B43-L01: Menguji Reduced Motion</h1>
+  <div class="animated-card">
+    <h3>Kartu Responsif Tanpa Pemicu Pusing</h3>
+    <p>Saat pengguna mengaktifkan Reduce Motion di OS, efek zoom digantikan oleh garis tepi tegas.</p>
+  </div>
+</body>
+</html>

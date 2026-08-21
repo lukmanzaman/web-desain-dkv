@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kriya Nusantara — Toko Daring Kerajinan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="toko-header">
+    <div class="kontainer header-flex">
+      <div class="logo">Kriya Nusantara</div>
+      <div class="keranjang-info">
+        🛒 Keranjang: <span class="badge-keranjang">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="kontainer main-content">
+    <div class="filter-group">
+      <button class="btn-filter aktif" data-filter="semua">Semua Produk</button>
+      <button class="btn-filter" data-filter="kriya">Kriya & Tenun</button>
+      <button class="btn-filter" data-filter="keramik">Keramik</button>
+    </div>
+
+    <div class="produk-grid">
+      <article class="kartu-produk" data-kategori="kriya">
+        <div class="gambar-wadah">
+          <span class="badge-diskon">-20%</span>
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400" alt="Tas Tenun">
+        </div>
+        <div class="produk-detail">
+          <span class="kategori-label">Kriya Tradisional</span>
+          <h3 class="nama-produk">Tas Tenun Ikat NTT Etnik</h3>
+          <p class="harga-produk">Rp380.000</p>
+          <button class="btn-tambah-keranjang">Tambah ke Keranjang</button>
+        </div>
+      </article>
+
+      <article class="kartu-produk" data-kategori="keramik">
+        <div class="gambar-wadah">
+          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=400" alt="Cangkir Keramik">
+        </div>
+        <div class="produk-detail">
+          <span class="kategori-label">Keramik Studio</span>
+          <h3 class="nama-produk">Cangkir Glasir Abu Vulkanik</h3>
+          <p class="harga-produk">Rp145.000</p>
+          <button class="btn-tambah-keranjang">Tambah ke Keranjang</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

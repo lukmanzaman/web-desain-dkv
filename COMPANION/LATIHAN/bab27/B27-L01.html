@@ -1,0 +1,37 @@
+<!-- B27-L01.html: Latihan Token Desain & Tema Gelap (Dark Mode) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B27-L01: Token Desain & Dark Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wadah-tema">
+    <header>
+      <button id="btn-toggle" class="btn-tema">🌓 Beralih Mode Gelap/Terang</button>
+      <h1>Kamus Token Desain Mandiri</h1>
+      <p class="subjudul">Mengontrol seluruh warna, radius, dan spasi antarmuka dari satu titik pusat di <code>:root</code>.</p>
+    </header>
+
+    <main class="grid-komponen">
+      <article class="kartu-karya">
+        <h3>01. Desain Aksara Digital</h3>
+        <p>Tokenisasi memudahkan pembuatan tema musiman atau mode kontras tinggi.</p>
+      </article>
+      <article class="kartu-karya">
+        <h3>02. Sistem Identitas Web</h3>
+        <p>Cukup ganti satu variabel <code>--warna-utama</code> untuk memperbarui seluruh identitas situs.</p>
+      </article>
+    </main>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn-toggle');
+    btn.addEventListener('click', () => {
+      document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+    });
+  </script>
+</body>
+</html>

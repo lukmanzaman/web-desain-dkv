@@ -1,0 +1,84 @@
+/* style.css: Kamus Token Desain Lengkap & Tema Dinamis */
+
+:root {
+  /* 1. Kamus Warna Dasar (Light Theme Default) */
+  --bg-halaman: #ffffff;
+  --bg-kartu: #f8fafc;
+  --teks-primer: #0f172a;
+  --teks-sekunder: #64748b;
+  --warna-utama: #6366f1;
+  --border-warna: #e2e8f0;
+  
+  /* 2. Token Radius & Spasi */
+  --radius-kartu: 12px;
+  --spasi-kontainer: 2rem;
+}
+
+/* 3. Dark Theme Override (Manual & Sistem) */
+body[data-theme="dark"] {
+  --bg-halaman: #0f172a;
+  --bg-kartu: #1e293b;
+  --teks-primer: #f8fafc;
+  --teks-sekunder: #94a3b8;
+  --warna-utama: #818cf8;
+  --border-warna: #334155;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) {
+    --bg-halaman: #0f172a;
+    --bg-kartu: #1e293b;
+    --teks-primer: #f8fafc;
+    --teks-sekunder: #94a3b8;
+    --warna-utama: #818cf8;
+    --border-warna: #334155;
+  }
+}
+
+body {
+  background-color: var(--bg-halaman);
+  color: var(--teks-primer);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: var(--spasi-kontainer);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wadah-tema {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.btn-tema {
+  background-color: var(--bg-kartu);
+  color: var(--teks-primer);
+  border: 1px solid var(--border-warna);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.subjudul {
+  color: var(--teks-sekunder);
+  line-height: 1.6;
+}
+
+.grid-komponen {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.kartu-karya {
+  background-color: var(--bg-kartu);
+  border: 1px solid var(--border-warna);
+  border-radius: var(--radius-kartu);
+  padding: 1.5rem;
+}
+
+.kartu-karya p {
+  color: var(--teks-sekunder);
+}

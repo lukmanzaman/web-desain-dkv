@@ -1,0 +1,73 @@
+<!-- B42-C01: Pustaka Pola UI — Akordeon & Modal Dialog -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B42-C01: Pustaka Pola Antarmuka (UI Patterns)</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: #1e293b; }
+    /* Pola 1: Akordeon Modern dengan <details> & <summary> Semantik */
+    details {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+    }
+    summary {
+      padding: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: #f1f5f9;
+    }
+    details[open] summary { background: #e2e8f0; }
+    .accordion-content { padding: 1rem; line-height: 1.6; }
+
+    /* Pola 2: Dialog Modal Bawaan HTML5 <dialog> */
+    dialog {
+      border: none;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      max-width: 480px;
+    }
+    dialog::backdrop {
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body>
+  <h1>Pola Antarmuka Esensial</h1>
+
+  <h2>1. Akordeon FAQ Semantik</h2>
+  <details>
+    <summary>Apa saja format berkas yang diterima untuk pameran?</summary>
+    <div class="accordion-content">
+      Kami menerima format vektor SVG, PDF beresolusi tinggi (300 DPI), serta file cetak zine fisik.
+    </div>
+  </details>
+  <details>
+    <summary>Bagaimana hak cipta atas karya yang dipamerkan?</summary>
+    <div class="accordion-content">
+      Hak cipta tetap sepenuhnya milik desainer/mahasiswa pembuat karya.
+    </div>
+  </details>
+
+  <h2>2. Modal Dialog Aksesibel</h2>
+  <button id="open-modal-btn">Buka Modal Konfirmasi</button>
+
+  <dialog id="fav-dialog">
+    <h3>Konfirmasi Pengiriman Karya</h3>
+    <p>Apakah Anda yakin berkas karya sudah sesuai dengan spesifikasi kuratorial?</p>
+    <button id="close-modal-btn">Tutup Dialog</button>
+  </dialog>
+
+  <script>
+    const dialog = document.getElementById('fav-dialog');
+    document.getElementById('open-modal-btn').addEventListener('click', () => dialog.showModal());
+    document.getElementById('close-modal-btn').addEventListener('click', () => dialog.close());
+  </script>
+</body>
+</html>

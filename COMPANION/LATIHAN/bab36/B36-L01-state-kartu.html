@@ -1,0 +1,35 @@
+<!-- B36-L01-state-kartu.html: Latihan Orchestrating UI States -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B36-L01: State Kartu Interaktif</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; background: #f1f5f9; }
+    .kartu-interaktif {
+      max-width: 320px;
+      background: #fff;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      cursor: pointer;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .kartu-interaktif:hover {
+      border-color: #3b82f6;
+      box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+      transform: translateY(-4px);
+    }
+    .kartu-interaktif:focus-within {
+      outline: 3px solid #60a5fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="kartu-interaktif" tabindex="0">
+    <h3>Kartu Portofolio Interaktif</h3>
+    <p>Sentuh kursor atau tekan tuts TAB keyboard untuk mengamati transisi state.</p>
+  </div>
+</body>
+</html>

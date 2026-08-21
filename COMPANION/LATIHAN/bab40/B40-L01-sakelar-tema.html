@@ -1,0 +1,32 @@
+<!-- B40-L01-sakelar-tema.html: Latihan Manipulasi DOM & Event Listener -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B40-L01: Sakelar Interaksi</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; }
+    .status-box { padding: 1rem; border-radius: 8px; background: #e0f2fe; color: #0369a1; margin-top: 1rem; }
+    .status-box.aktif { background: #dcfce7; color: #15803d; }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan B40-L01: Event Listener Dasar</h1>
+  <button id="btn-status">Ubah Status Kurasi</button>
+  <div id="box-info" class="status-box">Status Saat Ini: Menunggu Kurasi</div>
+
+  <script>
+    const btn = document.getElementById('btn-status');
+    const box = document.getElementById('box-info');
+    btn.addEventListener('click', () => {
+      box.classList.toggle('aktif');
+      if (box.classList.contains('aktif')) {
+        box.textContent = 'Status Saat Ini: Lolos Kurasi Pameran! ✨';
+      } else {
+        box.textContent = 'Status Saat Ini: Menunggu Kurasi';
+      }
+    });
+  </script>
+</body>
+</html>

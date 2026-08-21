@@ -1,0 +1,57 @@
+<!-- B28-L01-kartu-profil.html: Mengendalikan Aliran & Display -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B28-L01: Kartu Profil & Display Control</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f8fafc;
+      padding: 2rem;
+    }
+    /* Tantangan: Atur elemen inline, block, dan inline-block agar kartu berjejer rapi */
+    .wadah-galeri {
+      font-size: 0; /* Menghilangkan white-space bug pada inline-block */
+    }
+    .kartu-anggota {
+      display: inline-block;
+      width: 260px;
+      font-size: 1rem; /* Reset font size */
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 0.75rem;
+      vertical-align: top;
+      text-align: center;
+    }
+    .kartu-anggota img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: block; /* Menghindari gap bawah gambar inline */
+      margin: 0 auto 1rem auto;
+    }
+    .nama { margin: 0 0 0.25rem 0; font-size: 1.15rem; }
+    .peran { color: #64748b; font-size: 0.85rem; margin: 0 0 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan B28-L01: Mengendalikan Aliran Tampilan</h1>
+  <div class="wadah-galeri">
+    <div class="kartu-anggota">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200" alt="Foto">
+      <h3 class="nama">Dewi Kartika</h3>
+      <p class="peran">Lead Typographer</p>
+    </div>
+    <div class="kartu-anggota">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" alt="Foto">
+      <h3 class="nama">Bagas Prakoso</h3>
+      <p class="peran">UI/UX Designer</p>
+    </div>
+  </div>
+</body>
+</html>

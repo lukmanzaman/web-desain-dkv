@@ -1,0 +1,27 @@
+<!-- B55-C01: Contoh Komponen Aksesibel Lengkap -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B55-C01: Aksesibilitas Praktis Sehari-Hari</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 600px; margin: 2rem auto; padding: 0 1rem; }
+    /* Pastikan ring fokus keyboard terlihat jelas */
+    :focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+    .form-group { margin-bottom: 1rem; }
+    label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+    input { width: 100%; padding: 0.5rem; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <h1>Formulir Aksesibel Pendaftaran Kurasi</h1>
+  <form action="#" method="POST">
+    <div class="form-group">
+      <label for="nama-peserta">Nama Lengkap Sesuai KTP <span aria-hidden="true">*</span></label>
+      <input type="text" id="nama-peserta" name="nama" required aria-required="true">
+    </div>
+    <button type="submit">Kirimkan Pendaftaran</button>
+  </form>
+</body>
+</html>

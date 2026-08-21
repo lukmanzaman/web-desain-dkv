@@ -1,0 +1,72 @@
+/* style.css: Sistem Warna & Kontras WCAG AA */
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #0f172a;
+}
+
+.tombol-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tombol dengan rasio kontras aman */
+.btn-sukses {
+  background-color: #15803d; /* Hijau 700 */
+  color: #ffffff;
+}
+
+.btn-peringatan {
+  background-color: #b45309; /* Amber 700 */
+  color: #ffffff;
+}
+
+.btn-bahaya {
+  background-color: #b91c1c; /* Merah 700 */
+  color: #ffffff;
+}
+
+/* Alert Boxes */
+.alert {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid;
+  line-height: 1.5;
+}
+
+.alert-info {
+  background-color: #eff6ff;
+  color: #1e40af;
+  border-color: #3b82f6;
+}
+
+.alert-sukses {
+  background-color: #f0fdf4;
+  color: #166534;
+  border-color: #22c55e;
+}
+
+.alert-peringatan {
+  background-color: #fffbeb;
+  color: #92400e;
+  border-color: #f59e0b;
+}
+
+.alert-bahaya {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border-color: #ef4444;
+}

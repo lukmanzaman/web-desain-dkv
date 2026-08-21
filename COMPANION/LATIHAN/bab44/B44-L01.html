@@ -1,0 +1,26 @@
+<!-- B44-L01.html: Latihan Refaktorisasi Kelas Sembarangan ke BEM -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B44-L01: Refaktor BEM</title>
+  <style>
+    /* Ubah kelas spaghetti (.bunderan, .box-item2, .tombol1) menjadi BEM murni */
+    .c-author-card { display: flex; align-items: center; gap: 1rem; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0; }
+    .c-author-card__avatar { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
+    .c-author-card__name { margin: 0; font-size: 1.1rem; }
+    .c-author-card__role { margin: 0; color: #64748b; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan B44-L01: Penamaan BEM Terstandar</h1>
+  <div class="c-author-card">
+    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Avatar" class="c-author-card__avatar">
+    <div>
+      <h3 class="c-author-card__name">Siti Rahmania</h3>
+      <p class="c-author-card__role">Desainer Tipografi & Kurator</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* style.css: Font Pairing Editorial Modern */
+
+:root {
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #faf9f6;
+  color: #27272a;
+  line-height: 1.7;
+  padding: 3rem 1rem;
+}
+
+.artikel-editorial {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.kategori {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #d97706;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #18181b;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.kolofon {
+  font-size: 0.9rem;
+  color: #71717a;
+  margin-bottom: 2rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #3f3f46;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}

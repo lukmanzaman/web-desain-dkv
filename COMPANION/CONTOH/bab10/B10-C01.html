@@ -1,0 +1,42 @@
+<!-- B10-C01: Formulir Brief Proyek Desain -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustaka Antara — Formulir Brief Proyek</title>
+</head>
+<body>
+  <form action="/proses-brief" method="post">
+    <fieldset>
+      <legend>Brief Desain Identitas Visual</legend>
+
+      <p>
+        <label for="nama-klien">Nama Lengkap / Instansi:</label><br>
+        <input type="text" id="nama-klien" name="nama" required>
+      </p>
+
+      <p>
+        <label for="email-klien">Alamat Email:</label><br>
+        <input type="email" id="email-klien" name="email" required>
+      </p>
+
+      <p>
+        <label for="jenis-layanan">Pilihan Layanan:</label><br>
+        <select id="jenis-layanan" name="layanan">
+          <option value="branding">Rebranding Menyeluruh</option>
+          <option value="editorial">Desain Buku / Majalah</option>
+          <option value="web">Perancangan Web Portofolio</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="deskripsi-proyek">Deskripsi Gagasan Proyek:</label><br>
+        <textarea id="deskripsi-proyek" name="deskripsi" rows="5" cols="40"></textarea>
+      </p>
+
+      <button type="submit">Kirim Brief Proyek</button>
+    </fieldset>
+  </form>
+</body>
+</html>

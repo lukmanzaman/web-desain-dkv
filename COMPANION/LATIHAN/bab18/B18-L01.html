@@ -1,0 +1,28 @@
+<!-- B18-L01.html: Latihan Kaskade & Specificity -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B18-L01: Menaklukkan Kaskade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Petunjuk Soal:
+       1. Amati bagaimana warna teks <h1> ditentukan oleh aturan kaskade dan spesifisitas selektor di style.css.
+       2. Cobalah ubah urutan aturan di style.css untuk membuktikan prinsip Source Order.
+       3. Tambahkan class baru pada paragraf untuk melihat efek pewarisan (inheritance).
+  -->
+  <header>
+    <h1 id="judul-spesifik" class="tajuk-utama">Pameran Retrospektif Desain</h1>
+    <p class="deskripsi">Kajian kaskade gaya, urutan deklarasi, dan hierarki spesifisitas CSS.</p>
+  </header>
+
+  <main>
+    <article>
+      <h2>Mengapa Kaskade Penting?</h2>
+      <p>Kaskade adalah algoritma yang menyelesaikan konflik ketika lebih dari satu aturan CSS menyasar elemen yang sama.</p>
+    </article>
+  </main>
+</body>
+</html>

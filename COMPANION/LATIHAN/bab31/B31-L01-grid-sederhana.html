@@ -1,0 +1,52 @@
+<!-- B31-L01-grid-sederhana.html: Latihan Grid Template Area & Kolom -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B31-L01: Grid Sederhana</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 2rem;
+      background: #f1f5f9;
+    }
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: 
+        "kepala kepala"
+        "samping utama"
+        "kaki kaki";
+      gap: 1rem;
+      min-height: 80vh;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header { grid-area: kepala; background: #3b82f6; color: #fff; padding: 1rem; border-radius: 8px; }
+    aside  { grid-area: samping; background: #ffffff; padding: 1rem; border-radius: 8px; }
+    main   { grid-area: utama; background: #ffffff; padding: 1.5rem; border-radius: 8px; }
+    footer { grid-area: kaki; background: #1e293b; color: #fff; padding: 1rem; border-radius: 8px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="layout-grid">
+    <header><h2>Header Situs Desain</h2></header>
+    <aside>
+      <h3>Kategori</h3>
+      <ul>
+        <li>Tipografi</li>
+        <li>Identitas</li>
+        <li>Web UI</li>
+      </ul>
+    </aside>
+    <main>
+      <h2>Konten Utama Kurasi</h2>
+      <p>CSS Grid memberikan kendali dua dimensi (baris dan kolom sekaligus) secara deklaratif dan presisi.</p>
+    </main>
+    <footer><small>&copy; 2026 Studio Grid DKV.</small></footer>
+  </div>
+</body>
+</html>

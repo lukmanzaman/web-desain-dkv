@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B02-L01: Membedah Lalu Lintas Data</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      max-width: 750px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      color: #111827;
+    }
+    .guide-card {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    ol li { margin-bottom: 0.75rem; }
+    .status-code {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-family: monospace;
+      font-weight: bold;
+    }
+    .s200 { background: #dcfce7; color: #15803d; }
+    .s404 { background: #fee2e2; color: #b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Latihan Studio: Membedah Lalu Lintas Data (B02-L01)</h1>
+  <p>Eksperimen memahami siklus <em>Request-Response</em>, resolusi DNS, dan status kode HTTP menggunakan DevTools Network Tab.</p>
+
+  <div class="guide-card">
+    <h3>Langkah Eksperimen di Peramban:</h3>
+    <ol>
+      <li>Buka Google Chrome atau Mozilla Firefox.</li>
+      <li>Tekan <code>F12</code> (atau Klik Kanan &rarr; <strong>Inspect</strong>) &rarr; Buka tab <strong>Network</strong> (Jaringan).</li>
+      <li>Centang opsi <strong>Disable cache</strong> dan atur pembatasan kecepatan ke <strong>Fast 3G</strong>.</li>
+      <li>Ketik alamat web berita terkemuka lalu tekan Enter.</li>
+      <li>Amati berkas HTML yang pertama kali diunduh, lalu bagaimana CSS, Font, dan Gambar diminta menyusul secara paralel.</li>
+    </ol>
+  </div>
+
+  <h2>Daftar Status Kode HTTP Penting:</h2>
+  <ul>
+    <li><span class="status-code s200">200 OK</span> : Permintaan berhasil dan berkas dikirimkan utuh.</li>
+    <li><span class="status-code s200">304 Not Modified</span> : Berkas diambil dari memori cache lokal karena belum berubah.</li>
+    <li><span class="status-code s404">404 Not Found</span> : Alamat URL salah atau berkas telah dipindahkan/dihapus.</li>
+  </ul>
+</body>
+</html>

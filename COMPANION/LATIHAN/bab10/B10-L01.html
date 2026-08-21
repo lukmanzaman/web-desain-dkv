@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B10-L01: Formulir Submisi Portofolio DKV</title>
+</head>
+<body>
+  <!-- B10-L01: Formulir Submisi Portofolio DKV
+       Tantangan Studio:
+       1. Perbaiki relasi <label> dan <input> yang belum terhubung (pasang atribut for="..." dan id="...").
+       2. Buat kelompok radio button peminatan dengan atribut name="..." yang seragam.
+       3. Tambahkan fieldset dan legend untuk mengelompokkan data personal dan karya.
+       4. Beri tombol submit yang jelas maknanya.
+  -->
+  <h1>Pendaftaran Karya Pameran Tahunan DKV</h1>
+
+  <form action="/submisi" method="post">
+    <fieldset>
+      <legend>Data Mahasiswa</legend>
+      <p>
+        <label for="mhs-nama">Nama Lengkap:</label><br>
+        <input type="text" id="mhs-nama" name="nama" required>
+      </p>
+      <p>
+        <label for="mhs-nim">NIM:</label><br>
+        <input type="text" id="mhs-nim" name="nim" required pattern="[0-9]{8,10}">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Detail Karya</legend>
+      <p>
+        <label for="karya-judul">Judul Karya:</label><br>
+        <input type="text" id="karya-judul" name="judul" required>
+      </p>
+      <p>Peminatan Karya:</p>
+      <p>
+        <input type="radio" id="pem-brand" name="peminatan" value="branding" checked>
+        <label for="pem-brand">Identitas Merek</label><br>
+        <input type="radio" id="pem-edit" name="peminatan" value="editorial">
+        <label for="pem-edit">Desain Editorial</label><br>
+        <input type="radio" id="pem-web" name="peminatan" value="web">
+        <label for="pem-web">Desain Web & Interaksi</label>
+      </p>
+      <p>
+        <label for="karya-deskripsi">Sinopsis Karya:</label><br>
+        <textarea id="karya-deskripsi" name="sinopsis" rows="4" cols="50" placeholder="Jelaskan konsep karya dalam 100-200 kata..."></textarea>
+      </p>
+    </fieldset>
+
+    <p>
+      <button type="submit">Kirimkan Pendaftaran Karya</button>
+    </p>
+  </form>
+</body>
+</html>

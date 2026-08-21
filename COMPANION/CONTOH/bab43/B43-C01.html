@@ -1,0 +1,44 @@
+<!-- B43-C01: Gerak yang Bertanggung Jawab (prefers-reduced-motion) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B43-C01: Gerak Bertanggung Jawab</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 3rem; background: #fafaf9; }
+    .hero-banner {
+      padding: 2.5rem;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #ffffff;
+      border-radius: 16px;
+      max-width: 600px;
+    }
+    .floating-badge {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      margin-bottom: 1rem;
+      animation: float-slow 3s ease-in-out infinite;
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    /* Menghormati preferensi pengguna yang sensitif terhadap vestibular motion sickness */
+    @media (prefers-reduced-motion: reduce) {
+      .floating-badge {
+        animation: none; /* Matikan animasi gerak */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-banner">
+    <span class="floating-badge">✨ Pameran Desain 2026</span>
+    <h1>Animasi Inklusif & Bertanggung Jawab</h1>
+    <p>Selalu sediakan fallback bagi pengguna yang mengaktifkan pengaturan Reduced Motion di sistem operasi mereka.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!-- B38-C01: Tombol Hamburger Menjadi Silang 'X' Murni CSS Transform -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B38-C01: Transformasi Simbol Silang</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 3rem; background: #f8fafc; }
+    .menu-toggle {
+      width: 44px;
+      height: 44px;
+      background: #1e293b;
+      border: none;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+    .bar {
+      width: 22px;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    /* Transformasi saat kelas .is-open aktif */
+    .menu-toggle.is-open .bar-1 {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.is-open .bar-2 {
+      opacity: 0;
+    }
+    .menu-toggle.is-open .bar-3 {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>Transformasi Simbol Menu Hamburger</h1>
+  <button id="menu-btn" class="menu-toggle" aria-label="Buka Menu">
+    <span class="bar bar-1"></span>
+    <span class="bar bar-2"></span>
+    <span class="bar bar-3"></span>
+  </button>
+  <script>
+    const btn = document.getElementById('menu-btn');
+    btn.addEventListener('click', () => btn.classList.toggle('is-open'));
+  </script>
+</body>
+</html>

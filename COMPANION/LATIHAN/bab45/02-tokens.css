@@ -1,0 +1,7 @@
+/* 02-tokens.css: Tema Terakota Nusantara */
+:root {
+  --theme-brand: #c2410c;   /* Terakota / Oranye Bata */
+  --theme-bg: #fff7ed;      /* Krem Hangat */
+  --theme-surface: #ffffff;
+  --theme-text: #431407;
+}

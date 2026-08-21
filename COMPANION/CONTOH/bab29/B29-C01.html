@@ -1,0 +1,59 @@
+<!-- B29-C01: Bilah Navigasi Bersih & Elegan dengan Flexbox -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B29-C01: Dasar Flexbox — Navbar Elegan</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background-color: #f8fafc;
+    }
+    /* Flex Container Utama Navigasi */
+    .site-nav {
+      display: flex;
+      justify-content: space-between; /* Memisahkan logo ke kiri dan menu ke kanan */
+      align-items: center;            /* Menyejajarkan vertikal tepat di tengah */
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .brand-logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1e293b;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;                   /* Jarak antar butir menu */
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #475569;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="#" class="brand-logo">LENTERA&middot;DKV</a>
+    <ul class="nav-links">
+      <li><a href="#">Galeri</a></li>
+      <li><a href="#">Kurasi</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

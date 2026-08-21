@@ -1,0 +1,35 @@
+<!-- B58-L01.html: Latihan Fallback Elegan dengan @supports -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B58-L01: Uji Lintas Peramban & @supports</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; padding: 3rem; }
+    /* 1. Gaya Cadangan Dasar untuk Semua Peramban */
+    .glass-card {
+      background-color: #1e293b;
+      color: #f8fafc;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #334155;
+      max-width: 400px;
+    }
+    /* 2. Gaya Modern Jika Peramban Mendukung backdrop-filter */
+    @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+      .glass-card {
+        background-color: rgba(30, 41, 59, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <h2>Kartu Glassmorphism</h2>
+    <p>Memanfaatkan <code>@supports</code> menjamin tampilan tetap terbaca jelas di peramban apa pun.</p>
+  </div>
+</body>
+</html>

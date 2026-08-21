@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B09-L01: Matriks Kurasi Karya Desain</title>
+</head>
+<body>
+  <!-- B09-L01: Matriks Kurasi Karya Desain
+       Tantangan Studio:
+       1. Ubah baris judul <td> menjadi <thead> dengan <th> scope="col".
+       2. Tambahkan <caption> deskriptif.
+       3. Gunakan scope="row" pada kolom ID karya.
+       4. Gunakan rowspan="2" untuk karya dengan kategori sama.
+       5. Tambahkan <tfoot> dengan colspan="4" untuk rangkuman total kurasi.
+  -->
+  <h1>Kurasi Pameran Akhir Semester DKV</h1>
+
+  <table border="1">
+    <caption>Matriks Penilaian dan Status Kurasi Karya Mahasiswa 2026</caption>
+    <thead>
+      <tr>
+        <th scope="col">ID & Judul Karya</th>
+        <th scope="col">Nama Desainer</th>
+        <th scope="col">Peminatan</th>
+        <th scope="col">Media & Format</th>
+        <th scope="col">Status Kurasi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">K-01: Rimpang Nusantara</th>
+        <td>Nadia Safitri</td>
+        <td rowspan="2">Identitas Merek</td>
+        <td>Packaging & Brand Book</td>
+        <td>Lolos Kurasi</td>
+      </tr>
+      <tr>
+        <th scope="row">K-02: Tenun Buna Digital</th>
+        <td>Dimas Pratama</td>
+        <td>Situs Web Interaktif</td>
+        <td>Display Utama</td>
+      </tr>
+      <tr>
+        <th scope="row">K-03: Aksara Kawi Modern</th>
+        <td>Siti Rahma</td>
+        <td>Tipografi Editorial</td>
+        <td>Spesimen Font & Zine</td>
+        <td>Revisi Minor</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">Total Karya</th>
+        <td colspan="4">3 Karya Terdaftar (2 Lolos, 1 Revisi)</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

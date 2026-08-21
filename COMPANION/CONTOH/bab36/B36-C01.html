@@ -1,0 +1,55 @@
+<!-- B36-C01: Tombol Interaktif dengan State Lengkap -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B36-C01: State Lengkap di CSS</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 3rem;
+      background: #fafaf9;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.875rem 1.75rem;
+      background-color: #2563eb;
+      color: #ffffff;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.15s ease, transform 0.1s ease;
+    }
+    /* 1. State Hover */
+    .btn-cta:hover {
+      background-color: #1d4ed8;
+    }
+    /* 2. State Active (Saat ditekan) */
+    .btn-cta:active {
+      transform: scale(0.97);
+    }
+    /* 3. State Focus-Visible (Navigasi Keyboard) */
+    .btn-cta:focus-visible {
+      outline: 3px solid #93c5fd;
+      outline-offset: 3px;
+    }
+    /* 4. State Disabled */
+    .btn-cta:disabled {
+      background-color: #cbd5e1;
+      color: #94a3b8;
+      cursor: not-allowed;
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-cta">Daftar Pameran</button>
+  <button class="btn-cta" disabled>Pendaftaran Ditutup</button>
+</body>
+</html>

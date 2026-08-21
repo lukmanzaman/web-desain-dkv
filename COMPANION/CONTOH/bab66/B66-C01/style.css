@@ -1,0 +1,24 @@
+/* style.css: Situs Lembaga Multi-Halaman */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; }
+.kontainer { max-width: 1040px; margin: 0 auto; padding: 0 1rem; }
+.master-header { background: #0f172a; color: #fff; padding: 1.25rem 0; }
+.header-wrap { display: flex; justify-content: space-between; align-items: center; }
+.brand-instansi { font-weight: 800; letter-spacing: 0.05em; }
+.nav-instansi a { color: #94a3b8; text-decoration: none; margin-left: 1.25rem; font-weight: 500; }
+.nav-instansi a.active, .nav-instansi a:hover { color: #fff; }
+
+.main-content { padding: 2.5rem 1rem; min-height: 60vh; }
+.breadcrumbs ol { list-style: none; display: flex; gap: 0.5rem; padding: 0; margin-bottom: 1.5rem; font-size: 0.85rem; color: #64748b; }
+.breadcrumbs li + li::before { content: "/"; margin-right: 0.5rem; }
+
+.grid-berita-lembaga { display: grid; grid-template-columns: 2fr 1fr; gap: 2.5rem; }
+.berita-utama-besar img { width: 100%; border-radius: 8px; margin-bottom: 1rem; }
+
+.fat-footer { background: #0f172a; color: #94a3b8; padding: 3rem 0; margin-top: 4rem; }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.fat-footer h4 { color: #fff; margin-bottom: 0.5rem; }
+.fat-footer a { color: #94a3b8; text-decoration: none; }
+
+.input-teks { width: 100%; max-width: 500px; padding: 0.5rem; border: 1px solid #cbd5e1; border-radius: 4px; }
+.btn-kirim { padding: 0.6rem 1.2rem; background: #0f172a; color: #fff; border: none; border-radius: 4px; cursor: pointer; }

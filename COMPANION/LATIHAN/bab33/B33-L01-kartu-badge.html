@@ -1,0 +1,46 @@
+<!-- B33-L01-kartu-badge.html: Latihan Lapisan Koordinat & Sticky Header -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan B33-L01: Kartu Badge & Sticky Navigation</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background: #f8fafc;
+      min-height: 200vh;
+    }
+    /* Sticky Navigation Header */
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e2e8f0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .konten-halaman {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="sticky-header">
+    <strong>Studio Desain Pustaka</strong>
+    <span>Menu Sticky</span>
+  </header>
+  <main class="konten-halaman">
+    <h1>Gulir Layar untuk Menguji Efek Sticky</h1>
+    <p>Header di atas akan menempel di batas atas layar ketika halaman digulir.</p>
+  </main>
+</body>
+</html>
